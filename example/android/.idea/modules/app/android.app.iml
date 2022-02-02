@@ -81,7 +81,7 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.tracing:tracing:1.0.0@aar" level="project" />
-    <orderEntry type="module" module-name="android.activity_recognition_flutter" />
+    <orderEntry type="module" module-name="android.activity_recognition_flutter_mod" />
     <orderEntry type="module" module-name="android.permission_handler" />
   </component>
 </module>

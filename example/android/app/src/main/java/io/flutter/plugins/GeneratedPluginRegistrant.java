@@ -18,7 +18,7 @@ public final class GeneratedPluginRegistrant {
     try {
       flutterEngine.getPlugins().add(new dk.cachet.activity_recognition_flutter.ActivityRecognitionFlutterPlugin());
     } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin activity_recognition_flutter, dk.cachet.activity_recognition_flutter.ActivityRecognitionFlutterPlugin", e);
+      Log.e(TAG, "Error registering plugin activity_recognition_flutter_mod, dk.cachet.activity_recognition_flutter.ActivityRecognitionFlutterPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.baseflow.permissionhandler.PermissionHandlerPlugin());

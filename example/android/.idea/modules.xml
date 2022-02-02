@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-844193017/android.activity_recognition_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/-844193017/android.activity_recognition_flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-991508180/android.activity_recognition_flutter_mod.iml" filepath="$PROJECT_DIR$/.idea/modules/-991508180/android.activity_recognition_flutter_mod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1722690088/android.permission_handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1722690088/android.permission_handler.iml" />
     </modules>

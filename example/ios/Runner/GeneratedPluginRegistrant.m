@@ -6,10 +6,10 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<activity_recognition_flutter/ActivityRecognitionFlutterPlugin.h>)
-#import <activity_recognition_flutter/ActivityRecognitionFlutterPlugin.h>
+#if __has_include(<activity_recognition_flutter_mod/ActivityRecognitionFlutterPlugin.h>)
+#import <activity_recognition_flutter_mod/ActivityRecognitionFlutterPlugin.h>
 #else
-@import activity_recognition_flutter;
+@import activity_recognition_flutter_mod;
 #endif
 
 #if __has_include(<permission_handler/PermissionHandlerPlugin.h>)

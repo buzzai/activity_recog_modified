@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  activity_recognition_flutter:
+  activity_recognition_flutter_mod:
     # When depending on this package from a real application you should use:
     #   activity_recognition_flutter: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

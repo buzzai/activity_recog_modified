@@ -88,7 +88,15 @@ public class ActivityRecognitionFlutterPlugin implements FlutterPlugin, EventCha
     @Override
     public void onListen(Object arguments, EventChannel.EventSink events) {
         HashMap<String, Object> args = (HashMap<String, Object>) arguments;
-        boolean fg = (boolean) args.get("foreground");
+        boolean fg;
+
+        try {
+            fg = (boolean) args.get("foreground");
+        } catch (NullPointerException e) {
+            Log.e("onForegroundServiceStart", "Getting foreground service produced NullPointerException", e);
+            return;
+        }
+
         if(fg) {
             startForegroundService();
         }

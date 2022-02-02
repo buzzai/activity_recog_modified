@@ -64,7 +64,7 @@ public class ActivityRecognizedService extends JobIntentService {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create notification channel
-            NotificationChannel channel = new NotificationChannel("foreground.service.channel.activity_change", "Background Services", NotificationManager.IMPORTANCE_MAX);
+            NotificationChannel channel = new NotificationChannel("foreground.service.channel.activity_change", "Background Services", NotificationManager.IMPORTANCE_HIGH);
             channel.setDescription("Enables background processing.");
             getSystemService(NotificationManager.class).createNotificationChannel(channel);
 
@@ -72,7 +72,7 @@ public class ActivityRecognizedService extends JobIntentService {
                 // Make notification
                 Notification notification = new Notification.Builder(context, "foreground.service.channel")
                         .setContentTitle("activity notify")
-                        .setContentText(type.toString())
+                        .setContentText(type)
                         .setOngoing(true)
                         .setSmallIcon(R.drawable.common_full_open_on_phone) // Default is the star icon
                         .build();
