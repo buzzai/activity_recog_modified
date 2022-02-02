@@ -68,7 +68,7 @@ public class ActivityRecognizedService extends JobIntentService {
             channel.setDescription("Enables background processing.");
             getSystemService(NotificationManager.class).createNotificationChannel(channel);
 
-            if (type.equals("ON_FOOT")) {
+            if (type.equals("ON_FOOT") || type.equals("WALKING") || !type.equals("UNKNOWN")) {
                 // Make notification
                 Notification notification = new Notification.Builder(context, "foreground.service.channel")
                         .setContentTitle("activity notify")
