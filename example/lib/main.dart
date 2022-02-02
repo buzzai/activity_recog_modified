@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:activity_recognition_flutter/activity_recognition_flutter.dart';
+import 'package:activity_recognition_flutter_mod/activity_recognition_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
