@@ -9,10 +9,10 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../../../../../../../dev_dependencies/lib/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-7.2.0/android" />
-            <option value="$PROJECT_DIR$/../../android" />
+            <option value="$PROJECT_DIR$/../../../../../dev_dependencies/lib/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-7.2.0/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../../../flutter-plugins/packages/activity_recognition_flutter/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

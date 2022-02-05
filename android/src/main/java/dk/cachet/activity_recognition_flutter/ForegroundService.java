@@ -9,6 +9,7 @@ import android.app.NotificationManager;
 import android.os.IBinder;
 import android.os.Bundle;
 import android.annotation.TargetApi;
+import android.util.Log;
 
 public class ForegroundService extends Service {
 
@@ -36,7 +37,11 @@ public class ForegroundService extends Service {
 
         // Delete notification channel if it already exists
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.deleteNotificationChannel("foreground.service.channel");
+        try {
+            manager.deleteNotificationChannel("foreground.service.channel");
+        } catch (Exception e) {
+            Log.d("Error", e.toString());
+        }
 
         // Get notification channel importance
         Integer importance;

@@ -59,31 +59,7 @@ public class ActivityRecognizedService extends JobIntentService {
 
         Log.d("onHandleIntent", data);
 
-        // =============== modification =======================================
-        Context context = getApplicationContext();
-        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            // Create notification channel
-            NotificationChannel channel = new NotificationChannel("foreground.service.channel.activity_change", "Background Services", NotificationManager.IMPORTANCE_MAX);
-            channel.setDescription("Enables background processing.");
-            getSystemService(NotificationManager.class).createNotificationChannel(channel);
-
-            if (type.equals("ON_FOOT")) {
-                // Make notification
-                Notification notification = new Notification.Builder(context, "foreground.service.channel")
-                        .setContentTitle("activity notify")
-                        .setContentText(type.toString())
-                        .setOngoing(true)
-                        .setSmallIcon(R.drawable.common_full_open_on_phone) // Default is the star icon
-                        .build();
-                manager.notify(1, notification);
-            } else {
-                // Delete notification channel if it already exists
-                manager.cancel(1);
-            }
-        }
-
-        // =============== modification end ===================================
+       
 
         // Same preferences as in ActivityRecognitionFlutterPlugin.java
         SharedPreferences preferences = getApplicationContext()
