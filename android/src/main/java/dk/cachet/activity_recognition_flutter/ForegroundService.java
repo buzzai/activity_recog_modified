@@ -78,7 +78,7 @@ public class ForegroundService extends Service {
                 .setContentTitle((CharSequence) extras.get("title"))
                 .setContentText((CharSequence) extras.get("text"))
                 .setOngoing(true)
-                .setSmallIcon(icon == 0 ? 17301514 : icon) // Default is the star icon
+                .setSmallIcon(R.mipmap.ic_launcher) // Default is the star icon
                 .build();
 
         // Get notification ID
